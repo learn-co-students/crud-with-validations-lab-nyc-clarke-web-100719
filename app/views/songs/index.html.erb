@@ -1,0 +1,22 @@
+<h1>All songs</h1>
+
+ <table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Song</th>
+    </tr>
+  </thead>
+    <tbody>
+
+  <% @songs.each_with_index do |song, index| %>
+
+        <tr>
+        <td><%= index %> </td>
+        <td><%= song.title %></td>
+
+        </tr>
+  <% end %>
+    </tbody>
+
+</table> 
