@@ -1,0 +1,5 @@
+<h1><%= @song.artist_name.capitalize %> <br> </h1> 
+
+<%=form_for @song, method: :delete do |f| %>
+    <%=link_to "Delete", songs_path, method: 'DELETE'%>
+    <%end%>
